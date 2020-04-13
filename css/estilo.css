@@ -14,7 +14,7 @@ background-color: #252323;
 height: 60px;
 }
 
-main{
+main, .content{
 margin: 0 auto;
 width: 980px;
 position: relative;
@@ -30,6 +30,7 @@ display: block inline-block;
 float: left;
 list-style: none;
 }
+
 .redes-sociais{
 width: 20%;
 float: right;
@@ -123,8 +124,33 @@ right: 0;
 width: 100%!important;
 }
 
-.slick-dots li button{
+.slic-initialized{
+    overflow: hidden;
+}
+
+.slick-dots li button {
     font-size: 0px;
-    border: 3px solid #ffffff;
+    border: 5px solid #ffffff;
+    width: 26px;
+    height: 26px;
+    background: transparent;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots{
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 850px;
+}
+
+li.slick-active button {
+    background: #00bac6;
+}
+
+.slick-dots li{
+    padding-left: 10px;
+    display: inline-block;
 }
